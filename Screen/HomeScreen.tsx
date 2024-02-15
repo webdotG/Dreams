@@ -1,12 +1,13 @@
 import React from 'react'
 import { Text, View } from 'react-native'
+import { Heading } from 'native-base' 
 
 export default function HomeScreen() {
   return (
     <View>
-      <Text>
+      <Heading>
        Home 
-      </Text>
+      </Heading>
     </View>
   )
 }

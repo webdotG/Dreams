@@ -1,13 +1,13 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import { Center, Heading } from 'native-base' 
 
 export default function MyScreen() {
   return (
-    <View>
-    <Text>
-      My
-    </Text>
-  </View>
+    <Center>
+    <Heading>
+     My page
+    </Heading>
+  </Center>
 
   )
 }

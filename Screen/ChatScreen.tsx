@@ -1,13 +1,13 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import { Center, Heading } from 'native-base' 
 
 export default function ChatScreen() {
   return (
-    <View>
-    <Text>
-      Chat
-    </Text>
-  </View>
+    <Center>
+    <Heading>
+     Chat
+    </Heading>
+  </Center>
 
   )
 }

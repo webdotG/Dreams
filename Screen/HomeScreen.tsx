@@ -1,13 +1,12 @@
 import React from 'react'
-import { Text, View } from 'react-native'
-import { Heading } from 'native-base' 
+import { Center, Heading } from 'native-base' 
 
 export default function HomeScreen() {
   return (
-    <View>
+    <Center>
       <Heading>
        Home 
       </Heading>
-    </View>
+    </Center>
   )
 }

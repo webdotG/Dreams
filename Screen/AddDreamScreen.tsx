@@ -1,13 +1,13 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import { Center, Heading } from 'native-base' 
 
 export default function AddDreamScreen() {
   return (
-    <View>
-    <Text>
-      AddDream
-    </Text>
-  </View>
+    <Center>
+    <Heading>
+     Add dream
+    </Heading>
+  </Center>
 
   )
 }

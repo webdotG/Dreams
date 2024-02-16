@@ -24,16 +24,59 @@ export default function App() {
               options={{
                 title: "Dreams",
                 headerStyle: {
-                  backgroundColor: theme.colors.muted[600],
+                  backgroundColor: theme.colors.amber[600],
                 },
                 headerTitleAlign: 'center',
-                headerTintColor: '#fff'
-              }}
+                headerTintColor: theme.colors.light[50]             }}
               />
-            <Tab.Screen name="Calendar" component={CalendarScreen} />
-            <Tab.Screen name="AddDream" component={AddDreamScreen} />
-            <Tab.Screen name="Chat" component={ChatScreen} />
-            <Tab.Screen name="MyPage" component={MyScreen} />
+            <Tab.Screen 
+            name="Calendar" 
+            component={CalendarScreen} 
+            options={{
+              title: "Calendar",
+              headerStyle: {
+                backgroundColor: theme.colors.amber[600],
+              },
+              headerTitleAlign: 'center',
+              headerTintColor: theme.colors.light[50]
+            }}
+            />
+            <Tab.Screen 
+            name="AddDream" 
+            component={AddDreamScreen} 
+            options={{
+              title: "Add Dream",
+              headerStyle: {
+                backgroundColor: theme.colors.amber[600],
+              },
+              headerTitleAlign: 'center',
+              headerTintColor: theme.colors.light[50]
+            }}
+            />
+            <Tab.Screen 
+            name="Chat" 
+            component={ChatScreen} 
+            options={{
+              title: "Chat",
+              headerStyle: {
+                backgroundColor: theme.colors.amber[600],
+              },
+              headerTitleAlign: 'center',
+              headerTintColor: theme.colors.light[50]
+            }}
+            />
+            <Tab.Screen 
+            name="MyPage" 
+            component={MyScreen} 
+            options={{
+              title: "My Page",
+              headerStyle: {
+                backgroundColor: theme.colors.amber[600],
+              },
+              headerTitleAlign: 'center',
+              headerTintColor: theme.colors.light[50]
+            }}
+            />
           </Tab.Navigator>
         </NavigationContainer>
       </SafeAreaProvider>

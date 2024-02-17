@@ -4,7 +4,7 @@ import AddDreamScreen from "../Screen/AddDreamScreen";
 import ChatScreen from "../Screen/ChatScreen";
 import MyScreen from "../Screen/MyScreen";
 import { FontAwesome } from '@expo/vector-icons';
-import { Box, HStack, Icon, Pressable, Text, VStack, extendTheme } from "native-base";
+import { Box, Center, HStack, Heading, Icon, Pressable, Text, VStack, extendTheme } from "native-base";
 import { DrawerContentScrollView, createDrawerNavigator, DrawerToggleButton } from '@react-navigation/drawer';
 
 const Drawer = createDrawerNavigator();
@@ -24,9 +24,12 @@ const getIcon = (screenName: string) => {
 const CustomDrawerContent = (props: any) => {
   return (
     <DrawerContentScrollView {...props}>
-      <VStack paddingTop={50}>
+      <Center paddingTop={25}>
+        <Heading color={theme.colors.trueGray[700]} fontSize={33}>Menu</Heading>
+      </Center>
+      <VStack paddingTop={30}>
         {props.state.routeNames.map((name: string, index: number) => (
-          <Pressable onPress={(event) => props.navigation.navigate(name)}>
+          <Pressable key={index} onPress={(event) => props.navigation.navigate(name)}>
             <HStack alignItems="center" paddingLeft={10} paddingTop={25} space={10}>
               <Icon
                 size={8}
@@ -58,7 +61,7 @@ export default function Navigation() {
     headerStyle: {
       backgroundColor: theme.colors.orange[500]
     },
-    headerTintColor: theme.colors.muted[50]
+    headerTintColor: theme.colors.muted[50],
   }
 
   return (

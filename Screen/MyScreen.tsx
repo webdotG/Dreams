@@ -1,13 +1,15 @@
 import React from 'react'
-import { Center, Heading } from 'native-base' 
+import { Center, Heading } from 'native-base'
 
 export default function MyScreen() {
+  
   return (
+
     <Center>
-    <Heading>
-     My page
-    </Heading>
-  </Center>
+      <Heading>
+        My page
+      </Heading>
+    </Center>
 
   )
 }
